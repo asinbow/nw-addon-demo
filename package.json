@@ -3,6 +3,8 @@
   "version": "0.0.1",
   "main": "index.html",
   "gypfile": true,
+  "scripts": {
+  },
   "dependencies": {
     "bindings": "^1.2.1"
   },

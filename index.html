@@ -5,11 +5,12 @@
   </head>
   <body>
     <h1>Hello World!</h1>
-    We are using node.js <script>document.write(process.version)</script>.
+    <div>
+      We are using node.js <script>document.write(process.version)</script>.
+    </div>
+    <script>
+      var addon = require('bindings')('nw_simple_addon');
+      document.write(addon.getString());
+    </script>
   </body>
-  <script>
-	var xns = window.require('xiaoman_node_sys');
-	var ms = xns.getUserIdleTime();
-	document.title = '-----> idle ' + ms + ' ms';
-  </script>
 </html>
