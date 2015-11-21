@@ -1,4 +1,4 @@
-nw-rename-demo
+nw-addon-demo
 ---
 
 ### build

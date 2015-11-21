@@ -1,5 +1,5 @@
 {
-  "name": "nw-rename-demo",
+  "name": "nw-addon-demo",
   "version": "0.0.1",
   "main": "index.html",
   "gypfile": true,
