@@ -1,0 +1,7 @@
+build/
+cache/
+MyApp/
+node_modules/
+*.swp
+*.log
+

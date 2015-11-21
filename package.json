@@ -1,0 +1,12 @@
+{
+  "name": "nw-rename-demo",
+  "version": "0.0.1",
+  "main": "index.html",
+  "gypfile": true,
+  "dependencies": {
+    "bindings": "^1.2.1"
+  },
+  "devDependencies": {
+    "nw-builder": "^2.0.2"
+  }
+}
