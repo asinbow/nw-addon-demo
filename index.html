@@ -6,11 +6,19 @@
   <body>
     <h1>Hello World!</h1>
     <div>
-      We are using node.js <script>document.write(process.version)</script>.
+      We are using node.js <span id="NODE_VERSION"></span>.
     </div>
+	<div>
+	  We are using nw.js <span id="NWJS_VERSION"></span>.
+	</div>
+	<div>
+	  <span id="ADDON" style="color: red;"></span>.
+	</div>
     <script>
+	  NODE_VERSION.textContent = process.version;
+	  NWJS_VERSION.textContent = process.versions['node-webkit'];
       var addon = require('bindings')('nw_simple_addon');
-      document.write(addon.getString());
+      ADDON.textContent = addon.getString();
     </script>
   </body>
 </html>
