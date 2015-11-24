@@ -17,8 +17,12 @@
     <script>
 	  NODE_VERSION.textContent = process.version;
 	  NWJS_VERSION.textContent = process.versions['node-webkit'];
-      var addon = require('bindings')('nw_simple_addon');
-      ADDON.textContent = addon.getString();
+	  try {
+		var addon = require('bindings')('nw_simple_addon');
+		ADDON.textContent = addon.getString();
+	  } catch (e) {
+		ADDON.textContent = e;
+	  }
     </script>
   </body>
 </html>
